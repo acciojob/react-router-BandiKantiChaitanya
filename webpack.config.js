@@ -36,5 +36,11 @@ module.exports = {
     ],
     resolve: {
         extensions: ['.js', '.jsx'],
+    },
+    devServer: {
+        historyApiFallback: true, // ensures client-side routing works
+        open: true,
+        hot: true,
+        port: 8080,
     }
 };
